@@ -2,7 +2,7 @@
 import {
   LocalAccountSigner,
   type SmartAccountSigner,
-  sepolia,
+  polygonAmoy,
 } from "@alchemy/aa-core";
 import { createModularAccountAlchemyClient } from "@alchemy/aa-alchemy";
 import * as dotenv from "dotenv";
@@ -14,7 +14,7 @@ const ALCHEMY_API_KEY = process.env.ALCHEMY_API_KEY!;
 const PAYMASTER_POLICY_ID = process.env.PAYMASTER_POLICY_ID!;
 
 // Define the constants
-const chain = sepolia;
+const chain = polygonAmoy;
 const signer: SmartAccountSigner = LocalAccountSigner.privateKeyToAccountSigner(
   `0x${PRIV_KEY}`
 );

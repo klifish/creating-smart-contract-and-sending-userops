@@ -1,7 +1,7 @@
 import { parseEther } from "viem";
 import { privateKeyToAccount } from "viem/accounts";
 import { createWalletClient, http } from "viem";
-import { sepolia } from "viem/chains";
+import { polygonAmoy } from "viem/chains";
 import * as dotenv from "dotenv";
 dotenv.config();
 
@@ -15,7 +15,7 @@ async function main() {
 
   const wallet = createWalletClient({
     account: account,
-    chain: sepolia,
+    chain: polygonAmoy,
     transport: http(ALCHEMY_API_URL),
   });
 

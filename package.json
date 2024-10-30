@@ -13,9 +13,10 @@
   "author": "Alchemy",
   "license": "ISC",
   "dependencies": {
-    "@alchemy/aa-alchemy": "3.2.1",
-    "@alchemy/aa-core": "3.2.1",
-    "dotenv": "16.3.1"
+    "@alchemy/aa-alchemy": "3.19.0",
+    "@alchemy/aa-core": "3.19.0",
+    "dotenv": "16.3.1",
+    "ethers": "^6.13.4"
   },
   "devDependencies": {
     "@types/node": "^20.2.5",
